@@ -60,7 +60,7 @@ let count = 0;
 
 //create a object for my pc
 
-//create a object for my laptop
+/* create a object for my laptop
 const laptop = {
   ram: "8gb",
   storage: "1tb",
@@ -73,5 +73,19 @@ const laptop = {
   battery: "12000mAh",
   weight: "1.3kg",
 };
+*/
 
-console.log(laptop);
+const myarray = [
+  "kola",
+  "banana",
+  "apple",
+  "orange",
+  "kiwi",
+  "mango",
+  "grape",
+  "pineapple",
+];
+
+for (let i = 0; i < myarray.length; i++) {
+  console.log(myarray[i] + "\n");
+}
