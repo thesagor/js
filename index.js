@@ -73,7 +73,7 @@ const laptop = {
   battery: "12000mAh",
   weight: "1.3kg",
 };
-*/
+
 
 const myarray = [
   "kola",
@@ -87,5 +87,20 @@ const myarray = [
 ];
 
 for (let i = 0; i < myarray.length; i++) {
-  console.log(myarray[i] + "\n");
+  console.log(myarray[i]);
+}
+*/
+
+let myarray = [
+  "kola",
+  "banana",
+  "apple",
+  "orange",
+  "kiwi",
+  "mango",
+  "grape",
+  "pineapple",
+];
+for (var item in myarray) {
+  console.log(myarray[item]);
 }
