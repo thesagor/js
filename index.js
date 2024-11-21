@@ -89,7 +89,7 @@ const myarray = [
 for (let i = 0; i < myarray.length; i++) {
   console.log(myarray[i]);
 }
-*/
+
 
 let myarray = [
   "kola",
@@ -104,3 +104,23 @@ let myarray = [
 for (var item in myarray) {
   console.log(myarray[item]);
 }
+
+
+const itemobj = {
+  ram: "8gb",
+  storage: "1tb",
+  processor: "i7",
+  monitor: "15inch",
+  keyboard: "backlit",
+  mouse: "wireless",
+  touchpad: "yes",
+  display: "1920x1080",
+  battery: "12000mAh",
+  weight: "1.3kg",
+};
+
+for (var item in itemobj) {
+  console.log(itemobj[item]);
+}
+
+*/
