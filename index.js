@@ -123,4 +123,17 @@ for (var item in itemobj) {
   console.log(itemobj[item]);
 }
 
+
+
+let arraia = [1, 2, 3, 4, 5];
+let arra = [6, 7, 8, 9, 10];
+let concat = arraia.concat(arra);
+console.log(concat);
+
 */
+
+let myarray = "hello world. How are you?";
+let arayfrom = Array.from(myarray);
+for (let i = 0; i < arayfrom.length; i++) {
+  console.log(arayfrom[i]);
+}
