@@ -1,59 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <title>Your Page Title</title>
-    <link rel="stylesheet" href="css/miligram.min.css" />
-  </head>
-  <body>
-    <!-- Your content here -->
+    <link href="css/miligram.min.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- Your content here -->
 
-    <div class="container">
-      <div id="table">
+<div class="container">
+    <div id="table">
         <table>
-          <thead>
+            <thead>
             <tr>
-              <th>Product name</th>
-              <th>Product code</th>
-              <th>Unit Price</th>
-              <th>Quantity</th>
-              <th>Total Price</th>
-              <th>Update</th>
-              <th>Delete</th>
+                <th>Product name</th>
+                <th>Product code</th>
+                <th>Unit Price</th>
+                <th>Quantity</th>
+                <th>Total Price</th>
+                <th>Update</th>
+                <th>Delete</th>
             </tr>
-          </thead>
-          <tbody id="itemList">
+            </thead>
+            <tbody id="itemList">
             <!-- Dynamically generated rows will be here -->
-          </tbody>
+            </tbody>
         </table>
-      </div>
     </div>
+</div>
 
-    <script src="js/axios.js"></script>
+<script src="js/axios.js"></script>
 
-    <script>
-      // Data Read
-      async function getList() {
+<script>
+    // Data Read
+    async function dataList() {
         let URL = "https://crud.teamrabbil.com/api/v1/ReadProduct";
-        let response = await axios.get(URL);
-        let data = response.data.data;
-        data.forEach((item) => {
-          document.getElementById("itemList").innerHTML += `
-              <tr>
-                  <td>${item.ProductName}</td>
-                  <td>${item.ProductCode}</td>
-                  <td>${item["UnitPrice"]}</td>
-                  <td>${item["Qty"]}</td>
-                  <td>${item["TotalPrice"]}</td>
-                  <td><button onclick="goUpdatePage('${item["_id"]}')">Update</button></td>
-                  <td><button onclick="deleteItem('${item["_id"]}')">Delete</button></td>
-              <tr>
-          `;
-        });
-      }
+        let res = await axios.get(URL);
+        let getdata = res.data.data;
 
-      getList();
-    </script>
-  </body>
+        getdata.forEach((item) => {
+            document.getElementById('itemList').innerHTML += `
+            <tr>
+                <td>${item.ProductName}</td>
+                <td>${item.ProductCode}</td>
+                <td>${item.UnitPrice}</td>
+                <td>${item.Qty}</td>
+                <td>${item.TotalPrice}</td>
+                <td><button>update</button></td>
+                <td><button>Delete</button></td>
+            </tr>
+
+          `;
+        })
+    }
+
+    dataList();
+
+</script>
+</body>
 </html>
