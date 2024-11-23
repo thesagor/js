@@ -48,7 +48,7 @@
                 <td>${item.Qty}</td>
                 <td>${item.TotalPrice}</td>
                 <td><button>update</button></td>
-                <td><button>Delete</button></td>
+                <td><button onclick="dataDelete('${item['_id']}')">Delete</button></td>
             </tr>
 
           `;
@@ -56,6 +56,22 @@
     }
 
     dataList();
+
+    //data delete
+    /*async function dataDelete(id) {
+        let url = `https://crud.teamrabbil.com/api/v1/DeleteProduct/${id}`;
+        await axios.get(url);
+        document.getElementById('itemList').innerHTML += "";
+        dataList();
+    }*/
+
+    async function dataDelete(id) {
+        let url = `https://crud.teamrabbil.com/api/v1/DeleteProduct/${id}`;
+        await axios.get(url);
+        document.getElementById('itemList').innerHTML = "";
+        dataList();
+    }
+
 
 </script>
 </body>
