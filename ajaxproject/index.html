@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Your Page Title</title>
-    <link rel="stylesheet" href="/ajaxproject/css/miligram.min.css" />
+    <link rel="stylesheet" href="css/miligram.min.css" />
   </head>
   <body>
     <!-- Your content here -->
@@ -41,13 +41,13 @@
         data.forEach((item) => {
           document.getElementById("itemList").innerHTML += `
               <tr>
-                  <td>${item["ProductName"]}</td>
-                  <td>${item["ProductCode"]}</td>
+                  <td>${item.ProductName}</td>
+                  <td>${item.ProductCode}</td>
                   <td>${item["UnitPrice"]}</td>
                   <td>${item["Qty"]}</td>
                   <td>${item["TotalPrice"]}</td>
-                  <td><button onclick="deleteItem('${item["_id"]}')">Delete</button></td>
                   <td><button onclick="goUpdatePage('${item["_id"]}')">Update</button></td>
+                  <td><button onclick="deleteItem('${item["_id"]}')">Delete</button></td>
               <tr>
           `;
         });
