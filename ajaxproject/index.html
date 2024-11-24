@@ -38,6 +38,7 @@
         let URL = "https://crud.teamrabbil.com/api/v1/ReadProduct";
         let res = await axios.get(URL);
         let getdata = res.data.data;
+        document.getElementById('itemList').innerHTML = "";
 
         getdata.forEach((item) => {
             document.getElementById('itemList').innerHTML += `
@@ -57,19 +58,12 @@
 
     dataList();
 
-    //data delete
-    /*async function dataDelete(id) {
-        let url = `https://crud.teamrabbil.com/api/v1/DeleteProduct/${id}`;
-        await axios.get(url);
-        document.getElementById('itemList').innerHTML += "";
-        dataList();
-    }*/
-
+    //delete data
     async function dataDelete(id) {
-        let url = `https://crud.teamrabbil.com/api/v1/DeleteProduct/${id}`;
+        url = `https://crud.teamrabbil.com/api/v1/DeleteProduct/${id}`;
         await axios.get(url);
-        document.getElementById('itemList').innerHTML = "";
-        dataList();
+        await dataList();
+
     }
 
 
