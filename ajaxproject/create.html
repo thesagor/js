@@ -11,7 +11,7 @@
 
 <div class="container">
     <div id="table">
-        <form action="create.html">
+        <form action="">
             <h2>Product Details</h2>
 
             <label for="image">Image Link</label>
@@ -31,7 +31,7 @@
 
             <label for="TotalPrice">TotalPrice</label>
             <input id="TotalPrice" type="text">
-            <button onclick="createProduct()">Submit</button>
+            <button onclick="createProduct(event)">Submit</button>
         </form>
     </div>
 </div>
@@ -39,23 +39,21 @@
 <script src="js/axios.js"></script>
 
 
-  <script>
-    async function createProduct() {
-    let url = "https://crud.teamrabbil.com/api/v1/CreateProduct";
-    let productData = {
-    Img: document.getElementById('image').value,
-    ProductCode: document.getElementById('ProductCode').value,
-    ProductName: document.getElementById('ProductName').value,
-    Qty: document.getElementById('Qty').value,
-    UnitPrice: document.getElementById('UnitPrice').value,
-    TotalPrice: document.getElementById('TotalPrice').value
-  };
-    let res = await axios.post(url, productData);
-  }
-    createProduct();
-    window.url()
-</script>
-
+<script>
+    async function createProduct(event) {
+        event.preventDefault();
+        let url = "https://crud.teamrabbil.com/api/v1/CreateProduct";
+        let productData = {
+            Img: document.getElementById('image').value,
+            ProductCode: document.getElementById('ProductCode').value,
+            ProductName: document.getElementById('ProductName').value,
+            Qty: document.getElementById('Qty').value,
+            UnitPrice: document.getElementById('UnitPrice').value,
+            TotalPrice: document.getElementById('TotalPrice').value
+        };
+        let res = await axios.post(url, productData);
+        window.location.href = "index.html";
+    }
 </script>
 </body>
 </html>
