@@ -9,8 +9,14 @@
 
 
 //assignment operator
+/*
 let c=10
 console.log(c+=10)
 if(c===20 && c>=15){
     console.log("consition sotto= "+ c)
 }
+*/
+
+let n=25, m=35;
+let operation= n>=10 && m<=50;
+console.log(`operation = ${operation}` );
