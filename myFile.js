@@ -11,4 +11,6 @@
 //assignment operator
 let c=10
 console.log(c+=10)
-console.log(c*=c)
+if(c===20 && c>=15){
+    console.log("consition sotto= "+ c)
+}
