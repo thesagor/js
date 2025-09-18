@@ -1,9 +1,9 @@
-console.log("hello i am in myFile.js")
+//arithmatic operations
+    let a = 10;
+    let b = 3;
+    console.log("THis is add "+ (a+b));
+    console.log("THis is subtition "+ (a-b));
+    console.log("THis is multiplition "+ (a*b));
+    console.log("THis is division "+ (a/b));
+    console.log("THis is modulas "+ (a%b));
 
-let goto = "google.com"
-let file = "myFile.js"
-let final = "this is another"
-let chars = 'abcdefghijklmnopqrstuvwxyz'
-let template = `this is a template string with ${goto} and ${file} and ${final}`
-
-console.log(template)
