@@ -17,6 +17,21 @@ if(c===20 && c>=15){
 }
 */
 
+/*
 let n=25, m=35;
 let operation= n>=10 && m<=50;
 console.log(`operation = ${operation}` );
+*/
+
+//increement
+
+let n=10;
+
+/*
+console.log(n++);
+console.log(n);*/
+
+//decrement
+console.log(n--);
+console.log(n);
+console.log(--n);
