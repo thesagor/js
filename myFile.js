@@ -48,16 +48,28 @@ if (bill>=100){
     console.log(`your vat will be dictated ${bill*.0180}` );
 }*/
 
-//vat calculation
-let bill;
-function vatCalculator(billAmount){
-    if (billAmount>=500){
-        return billAmount*.15;
+/*//vat calculation
+let bill=1000;
+function vatCalculator(bill){
+    if (bill>=500){
+        return bill*.15;
     }
     else{
         return `you are not eligible for vat` ;
     }
 }
+let totalbill= bill+vatCalculator(bill);
+console.log(`your total bill is ${totalbill}` );*/
 
-console.log(vatCalculator(100));
-
+let bill ;
+function vatCalculator(bill){
+    if (bill>=1500){
+        return bill*.20;
+    }else if(bill>=500 && bill<=1500)
+    {
+        return bill * .10;
+    }else{
+        return bill;
+    }
+}
+console.log(vatCalculator(500));
