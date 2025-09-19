@@ -32,6 +32,15 @@ console.log(n++);
 console.log(n);*/
 
 //decrement
-console.log(n--);
+/*console.log(n--);
 console.log(n);
-console.log(--n);
+console.log(--n);*/
+
+//operator precedence
+/*console.log(3+5*2);
+console.log((3+5)*2);
+console.log(10/2-3);*/
+
+
+
+
