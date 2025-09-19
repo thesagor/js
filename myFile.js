@@ -42,5 +42,22 @@ console.log((3+5)*2);
 console.log(10/2-3);*/
 
 
+/*//if else
+let bill=10000;
+if (bill>=100){
+    console.log(`your vat will be dictated ${bill*.0180}` );
+}*/
 
+//vat calculation
+let bill;
+function vatCalculator(billAmount){
+    if (billAmount>=500){
+        return billAmount*.15;
+    }
+    else{
+        return `you are not eligible for vat` ;
+    }
+}
+
+console.log(vatCalculator(100));
 
