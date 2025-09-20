@@ -75,18 +75,21 @@ function vatCalculator(bill){
 console.log(vatCalculator(500));*/
 
 
-//bill and vat calculation using javascript
-let bill=1700 ;
-function vatCalculation(bill){
-    if (bill>=1500){
-        return bill*.20;
-    }else if(bill>=500 && bill<=1500)
-    {
-        return bill * .10;
-    }else{
-        return bill;
+//bill and vat calculation using switch case
+let bill ;
+function vatCalculator(bill){
+    switch(true){
+        case(bill>=1500):
+            return bill*.20;
+            break;
+        case(bill>=500 && bill<=1500):
+            return bill*.15;
+            break;
+            case(bill<=500):
+            return "no need to pay vat";
+            break;
+        default:
+            return "invalid bill amount";
     }
 }
-console.log("vat is the "+ vatCalculation(bill));
-let totalBill= bill+ vatCalculation(bill);
-console.log(totalBill);
+console.log(vatCalculator(1000));
