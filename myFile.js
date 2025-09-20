@@ -61,7 +61,7 @@ function vatCalculator(bill){
 let totalbill= bill+vatCalculator(bill);
 console.log(`your total bill is ${totalbill}` );*/
 
-let bill ;
+/*let bill ;
 function vatCalculator(bill){
     if (bill>=1500){
         return bill*.20;
@@ -72,4 +72,21 @@ function vatCalculator(bill){
         return bill;
     }
 }
-console.log(vatCalculator(500));
+console.log(vatCalculator(500));*/
+
+
+//bill and vat calculation using javascript
+let bill=1700 ;
+function vatCalculation(bill){
+    if (bill>=1500){
+        return bill*.20;
+    }else if(bill>=500 && bill<=1500)
+    {
+        return bill * .10;
+    }else{
+        return bill;
+    }
+}
+console.log("vat is the "+ vatCalculation(bill));
+let totalBill= bill+ vatCalculation(bill);
+console.log(totalBill);
