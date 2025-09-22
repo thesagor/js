@@ -173,6 +173,11 @@ while(true){
 }
 */
 
+let name= "sagor ahmed";
+for(let v of name){
+    console.log(v);
+}
+
 
 
 
