@@ -25,7 +25,7 @@ console.log(`operation = ${operation}` );
 
 //increement
 
-let n=10;
+//let n=10;
 
 /*
 console.log(n++);
@@ -173,10 +173,22 @@ while(true){
 }
 */
 
-let name= "sagor ahmed";
+/*let name= "sagor ahmed";
 for(let v of name){
     console.log(v);
-}
+}*/
+
+/*let data=[10,20,30,40,50];
+data[4]=100;
+for(let i=0;i<data.length;i++){
+    console.log(data[i]);
+}*/
+
+//array literal
+let names = ['sagor', 'ahmed', 'rafi', 'sabbir'];
+names[names.length] = 'ador ali';
+console.log(names);
+
 
 
 
