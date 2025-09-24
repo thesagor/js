@@ -209,8 +209,17 @@ console.log(num);
 
 let name= [1,2,3,4,5,6];
 for (let v of name) {
-    console.log(v);*/
+    console.log(v);
 }
+*/
+//array travers sinc
+
+/*
+let trav= [1,2,3,4,5,6];
+for (let i=0; i<trav.length;i++){
+    console.log("num is =" +trav[i])
+}
+*/
 
 
 
