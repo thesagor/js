@@ -221,6 +221,26 @@ for (let i=0; i<trav.length;i++){
 }
 */
 
+let arr = [10,202,31,454,5,7]
+let sum = 0
+for (let i = 0; i < arr.length; i++) {
+    sum += arr[i]
+}
+console.log("average= "+sum/arr.length)
+let mynum= arr[0];
+
+for(let i=1; i<arr.length;i++){
+    if(mynum<arr[i]){
+        mynum=arr[i]
+    }
+}
+console.log(mynum)
+
+
+
+
+
+
 
 
 
