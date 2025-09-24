@@ -184,11 +184,33 @@ for(let i=0;i<data.length;i++){
     console.log(data[i]);
 }*/
 
-//array literal
+/*//array literal
 let names = ['sagor', 'ahmed', 'rafi', 'sabbir'];
 names[names.length] = 'ador ali';
-console.log(names);
+console.log(names);*/
 
+/*let letarray= [6]
+console.log(letarray)
+
+//array construct and factory mode
+let constarray= new Array(6);
+console.log(constarray)
+
+let facarray= Array(6)
+console.log(facarray)*/
+/*
+let myArray = [1,2,3,4,5,6,7,8,9,10];
+myArray[99]=100
+console.log(myArray)*/
+
+/*//array constructor and factor mode
+let num= new Array('name', 'age', 'address');
+console.log(num);
+
+let name= [1,2,3,4,5,6];
+for (let v of name) {
+    console.log(v);*/
+}
 
 
 
