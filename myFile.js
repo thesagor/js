@@ -227,14 +227,13 @@ for (let i = 0; i < arr.length; i++) {
     sum += arr[i]
 }
 console.log("average= "+sum/arr.length)
-let mynum= arr[0];
-
+let largeNum= arr[0];
 for(let i=1; i<arr.length;i++){
-    if(mynum<arr[i]){
-        mynum=arr[i]
+    if(arr[i]>largeNum){
+        largeNum=arr[i]
     }
 }
-console.log(mynum)
+console.log(largeNum)
 
 
 
