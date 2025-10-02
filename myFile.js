@@ -220,7 +220,7 @@ for (let i=0; i<trav.length;i++){
     console.log("num is =" +trav[i])
 }
 */
-
+/*
 let arr = [10,202,31,454,5,7,9]
 let sum=0;
 for(let i=0; i<arr.length;i++){
@@ -235,7 +235,24 @@ for(let i=0; i<arr.length;i++){
         highval=arr[i];
     }
 }
-console.log(highval)
+console.log(highval)*/
+
+//array fill
+
+/*let arr1= new Array(10);
+console.log(arr1);
+for(let i=0; i<arr1.length; i++){
+    arr1[i]="False";
+}
+console.log(arr1);
+
+let arr2= new Array(10);
+arr2.fill("Xero");
+console.log(arr2);
+
+let arr3= ['Taskia','Rakib', 'alpona'];
+arr3[2]="Sadia";
+console.log(arr3);*/
 
 
 
