@@ -253,6 +253,27 @@ console.log(arr2);
 let arr3= ['Taskia','Rakib', 'alpona'];
 arr3[2]="Sadia";
 console.log(arr3);*/
+/*
+let complex= new Array(20)
+console.log(complex)*/
+
+/*let response=new Array(20);
+for(let i=0; i<response.length;i++){
+    response[i]=i;
+    console.log(response)
+}*/
+
+let names= ['Taskua','sagor', 'trajib','hayan'];
+function updates(arr){
+    for(let i=0;i<arr.length;i++){
+        arr[i]= `${i+1}.${names[i]}`
+    }
+    return arr;
+}
+updates(names);
+console.log(names)
+
+
 
 
 
