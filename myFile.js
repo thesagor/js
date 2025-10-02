@@ -221,20 +221,21 @@ for (let i=0; i<trav.length;i++){
 }
 */
 
-let arr = [10,202,31,454,5,7]
-let sum = 0
-for (let i = 0; i < arr.length; i++) {
-    sum += arr[i]
+let arr = [10,202,31,454,5,7,9]
+let sum=0;
+for(let i=0; i<arr.length;i++){
+    sum+=arr[i];
 }
-console.log("average= "+sum/arr.length)
-let lowestNum=arr[0]
-for(let i=1; i<arr.length;i++){
-    if(arr[i]<lowestNum){
-        lowestNum=arr[i]
+console.log("the average is "+ sum/arr.length);
+
+//finding the higeset value
+let highval=arr[0];
+for(let i=0; i<arr.length;i++){
+    if(arr[i]<highval){
+        highval=arr[i];
     }
 }
-console.log(lowestNum)
-
+console.log(highval)
 
 
 
