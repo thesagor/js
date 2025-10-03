@@ -263,17 +263,45 @@ for(let i=0; i<response.length;i++){
     console.log(response)
 }*/
 
-let names= ['Taskua','sagor', 'trajib','hayan'];
+/*let names= ['Taskua','sagor', 'trajib','hayan'];
 function updates(arr){
     for(let i=0;i<arr.length;i++){
-        arr[i]= `${i+1}.${names[i]}`
+        arr[i]= `${i+1}.${arr[i]}`
     }
     return arr;
 }
 updates(names);
-console.log(names)
+console.log(names)*/
 
+/*//some array
+const myArra= ['Sagor ahmed', 25, getfunc,{Age:25}, ['name','age']];
+console.log(myArra)
 
+function getfunc(){
+    return true;
+}*/
+/*
+const favorite=[
+    {name:'channel 24', url:'http://google.com', rating:4.5},
+    {name:'Newds 25', url:'http://google.com', rating:4.0},
+    {name:'higeng'}
+];
+let check= favorite ? 'this is true':"na re eta vyk";
+console.log(check);*/
+
+//sum,sub,multi,divi,modulas
+
+const sum= (a,b)=>a+b;
+const sub= (a,b)=>a-b;
+const multi= (a,b)=>a*b;
+const div= (a,b)=>a/b;
+const mod= (a,b)=>a%b;
+
+const funcs= [sum, sub, multi, div, mod];
+let a=10, b=5;
+for(let func of funcs){
+    console.log(func(a,b))
+}
 
 
 
