@@ -291,6 +291,7 @@ console.log(check);*/
 
 //sum,sub,multi,divi,modulas
 
+/*
 const sum= (a,b)=>a+b;
 const sub= (a,b)=>a-b;
 const multi= (a,b)=>a*b;
@@ -302,6 +303,9 @@ let a=10, b=5;
 for(let func of funcs){
     console.log(func(a,b))
 }
+*/
+
+
 
 
 
