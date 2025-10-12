@@ -322,6 +322,33 @@ person1.email="nilsagor@gmail.co.uk";
 console.log(person1);*/
 
 
+const student1={
+    name: "Sagor ahmed",
+    email: "nilsagor004@gmail.com",
+    cell: "01785887854",
+    gender: "male"
+}
+
+const student2={
+    name: "hamid ahmed",
+    email: "halm@gmail.com",
+    cell: "0178887854",
+    gender: "male"
+}
+
+const student3={
+    name: "gemini ahmed",
+    email: "genimi@gmail.com",
+    cell: "01785887854",
+    gender: "female"
+}
+
+const people= [student1, student2, student3];
+for( let student of people){
+    console.log(student)
+}
+
+
 
 
 
