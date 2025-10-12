@@ -305,7 +305,21 @@ for(let func of funcs){
 }
 */
 
+//object
 
+/*const person1 = {
+    firstName: " Sagor Ahmed",
+    email: "nilsagor@gmail.com",
+    cell: "01521585458",
+    gender: "Male"
+}
+
+console.log(person1['gender']);
+
+delete person1.email;
+console.log(person1);
+person1.email="nilsagor@gmail.co.uk";
+console.log(person1);*/
 
 
 
