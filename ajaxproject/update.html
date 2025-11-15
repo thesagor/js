@@ -13,6 +13,22 @@
       <div id="table"></div>
     </div>
 
-    <script src="/js/index.js"></script>
+    <script>
+      // Wait for DOM to be fully loaded before loading GSAP
+      document.addEventListener('DOMContentLoaded', function() {
+        // Only load GSAP script after DOM is ready
+        const script = document.createElement('script');
+        script.src = '/js/index.js';
+        script.onload = function() {
+          console.log('GSAP loaded successfully');
+          // Add any GSAP animations here after the library is loaded
+          // Example: gsap.to("#table", {duration: 1, opacity: 1});
+        };
+        script.onerror = function() {
+          console.error('Failed to load GSAP library');
+        };
+        document.head.appendChild(script);
+      });
+    </script>
   </body>
 </html>
